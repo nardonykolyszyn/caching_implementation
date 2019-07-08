@@ -1,0 +1,4 @@
+- @authors.each do |author|
+  %h2= author.name
+  - author.books.each_with_index do |book, index|
+    %p= "#{index+1} #{book.name}"
