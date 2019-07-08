@@ -1,5 +1,4 @@
 - @authors.each do |author|
   %h2= author.name
-  - cache author do
-    - author.books.each_with_index do |book, index|
-      %p= "#{index+1} #{book.name}"
+  - cache(author) do
+    = render partial: 'books', locals: { books: author.books }, cached: true
