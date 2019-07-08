@@ -2,5 +2,5 @@
 
 class Book < ApplicationRecord
   ## Associations
-  belongs_to :author
+  belongs_to :author, touch: true
 end
