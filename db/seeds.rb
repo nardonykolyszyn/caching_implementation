@@ -8,6 +8,6 @@ require 'faker'
 
 Author.all.each do |author|
   20.times do
-    author.books.create(name: Faker::Book.unique.title)
+    author.books.create(name: Faker::Book.title)
   end
 end
