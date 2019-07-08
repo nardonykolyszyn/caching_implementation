@@ -18,9 +18,6 @@ Bundler.require(*Rails.groups)
 
 module Caching
   class Application < Rails::Application
-    config.generators do |g|
-      g.template_engine :haml
-    end
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
